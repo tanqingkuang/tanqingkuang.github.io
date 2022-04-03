@@ -1,37 +1,269 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Markdown.1——基本操作 | Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="字体12345*斜体文本***粗体文本*****粗斜体文本***~~删除线~~&lt;&#x2F;u&gt;下划线&lt;&#x2F;u&gt;  斜体文本粗体文本粗斜体文本删除线下划线 分层分割线：—列表：”1.”、”-“等开头即可引用：”&gt;”开头代码：  句内的使用反引号(·)括起来 一段使用三个反引号’’’开头  链接注释12孙[^1]夏[^1][^1]: 人的一生应该怎么样度过  孙[^1]夏[^1][">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown.1——基本操作">
+<meta property="og:url" content="http://example.com/2022/04/04/Markdown/Markdown-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:site_name" content="Learning">
+<meta property="og:description" content="字体12345*斜体文本***粗体文本*****粗斜体文本***~~删除线~~&lt;&#x2F;u&gt;下划线&lt;&#x2F;u&gt;  斜体文本粗体文本粗斜体文本删除线下划线 分层分割线：—列表：”1.”、”-“等开头即可引用：”&gt;”开头代码：  句内的使用反引号(·)括起来 一段使用三个反引号’’’开头  链接注释12孙[^1]夏[^1][^1]: 人的一生应该怎么样度过  孙[^1]夏[^1][">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://static.runoob.com/images/runoob-logo.png">
+<meta property="og:image" content="http://static.runoob.com/images/runoob-logo.png">
+<meta property="article:published_time" content="2022-04-03T18:24:09.103Z">
+<meta property="article:modified_time" content="2022-04-03T18:24:09.104Z">
+<meta property="article:author" content="Zhang Meng">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://static.runoob.com/images/runoob-logo.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Learning" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Learning</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">For Summer</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Markdown/Markdown-1-基本操作" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/04/Markdown/Markdown-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="article-date">
+  <time class="dt-published" datetime="2022-04-03T18:24:09.103Z" itemprop="datePublished">2022-04-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Markdown.1——基本操作
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">**粗体文本**</span><br><span class="line">***粗斜体文本***</span><br><span class="line">~~删除线~~</span><br><span class="line">&lt;/u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+<p><em>斜体文本</em><br><strong>粗体文本</strong><br><em><strong>粗斜体文本</strong></em><br><del>删除线</del><br><u>下划线</u></p>
+<h1 id="分层"><a href="#分层" class="headerlink" title="分层"></a>分层</h1><p>分割线：—<br>列表：”1.”、”-“等开头即可<br>引用：”&gt;”开头<br>代码：</p>
+<ul>
+<li>句内的使用反引号(·)括起来</li>
+<li>一段使用三个反引号’’’开头</li>
+</ul>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">孙[^1]夏[^1]</span><br><span class="line">[^1]: 人的一生应该怎么样度过</span><br></pre></td></tr></table></figure>
+
+<p>孙[^1]夏[^1]<br>[^1]: 人的一生应该怎么样度过</p>
+<h2 id="网页"><a href="#网页" class="headerlink" title="网页"></a>网页</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line">这是一个链接[菜鸟教程](https://www.runoob.com)</span><br></pre></td></tr></table></figure>
+
+<p>这是一个链接<a target="_blank" rel="noopener" href="https://www.runoob.com/">菜鸟教程</a></p>
+<h2 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 runoob 作为网址变量 [Runoob][runoob]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line">[1]: http://www.google.com/</span><br><span class="line">[runoob]: http://www.runoob.com/</span><br></pre></td></tr></table></figure>
+
+<p>这个链接用 1 作为网址变量 [Google][1]<br>这个链接用 runoob 作为网址变量 [Runoob][runoob]<br>然后在文档的结尾为变量赋值（网址）<br>[1]: <a target="_blank" rel="noopener" href="http://www.google.com/">http://www.google.com/</a><br>[runoob]: <a target="_blank" rel="noopener" href="http://www.runoob.com/">http://www.runoob.com/</a></p>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><h2 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![alt 属性文本](图片地址)</span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标"></p>
+<h2 id="显示格式"><a href="#显示格式" class="headerlink" title="显示格式"></a>显示格式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">大小：</span><br><span class="line">&lt;img src=&quot;http://static.runoob.com/images/runoob-logo.png&quot; width=&quot;50%&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
+
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><h2 id="表格插入"><a href="#表格插入" class="headerlink" title="表格插入"></a>表格插入</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<h2 id="显示格式-1"><a href="#显示格式-1" class="headerlink" title="显示格式"></a>显示格式</h2><ul>
+<li><strong>-:</strong> 设置内容和标题栏居右对齐。</li>
+<li><strong>:-</strong> 设置内容和标题栏居左对齐。</li>
+<li><strong>:-:</strong> 设置内容和标题栏居中对齐。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/04/Markdown/Markdown-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" data-id="cl1jnflsm00001ow3bzc67m29" data-title="Markdown.1——基本操作" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+</section>
+        
+          <aside id="sidebar">
+  
+    
 
-{% block page_class %}page-post-detail{% endblock %}
+  
+    
 
-
-{% block content %}
-
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
-
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/04/Markdown/Markdown-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">Markdown.1——基本操作</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Zhang Meng<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
