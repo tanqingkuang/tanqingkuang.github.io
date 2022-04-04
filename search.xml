@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Markdown.2——博客</title>
+      <link href="/2022/04/04/Markdown/Markdown-2-%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2022/04/04/Markdown/Markdown-2-%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<p>主要用于记录博客的创建、文章推送、主题配置等功能</p><span id="more"></span>         <h1 id="创建博客"   >          <a href="#创建博客" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h1>              <h2 id="参考"   >          <a href="#参考" class="heading-link"><i class="fas fa-link"></i></a><a href="#参考" class="headerlink" title="参考"></a>参考</h2>      <p><span class="exturl"><a class="exturl__link"   href="https://zhuanlan.zhihu.com/p/26625249" >流程帖</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><a href="%E7%9B%B8%E6%AF%94%E4%BA%8E%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91%EF%BC%8C%E6%AD%A4%E5%A4%84%E9%94%99%E8%AF%AF%E8%BE%83%E5%A4%9A%EF%BC%8C%E4%BD%86%E6%98%AF%E6%8F%90%E4%BE%9B%E4%BA%86%E6%9B%B4%E5%A4%9A%E5%8A%9F%E8%83%BD%EF%BC%8C%E6%96%B0%E6%89%8B%E5%BB%BA%E8%AE%AE%E5%85%88%E6%8C%89%E7%85%A7%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91%EF%BC%8C%E8%AF%A5%E5%B8%96%E5%AD%90%E5%8F%AF%E4%BB%A5%E4%BD%9C%E4%B8%BA%E5%8F%82%E8%80%83">^1</a></p><p><span class="exturl"><a class="exturl__link"   href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5" >演示视频</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><iframe src="//player.bilibili.com/player.html?aid=675151445&bvid=BV1mU4y1j72n&cid=399634254&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>        <h2 id="问题解决"   >          <a href="#问题解决" class="heading-link"><i class="fas fa-link"></i></a><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2>      <p><span class="exturl"><a class="exturl__link"   href="https://blog.csdn.net/m0_67402970/article/details/123434948?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-4-123434948.pc_agg_new_rank&utm_term=0+found+npm%E5%AE%89%E8%A3%85+vulnerabilities&spm=1000.2123.3001.4430" >found 0 vulnerabilities</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p><span class="exturl"><a class="exturl__link"   href="https://blog.csdn.net/weixin_44237337/article/details/119994618" >WARN Failed to install dependencies. Please run ‘npm install‘</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>        <h2 id="结果"   >          <a href="#结果" class="heading-link"><i class="fas fa-link"></i></a><a href="#结果" class="headerlink" title="结果"></a>结果</h2>      <p><span class="exturl"><a class="exturl__link"   href="https://tanqingkuang.github.io/" >Learning (tanqingkuang.github.io)</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>        <h1 id="推送文章"   >          <a href="#推送文章" class="heading-link"><i class="fas fa-link"></i></a><a href="#推送文章" class="headerlink" title="推送文章"></a>推送文章</h1>              <h2 id="格式"   >          <a href="#格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#格式" class="headerlink" title="格式"></a>格式</h2>      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: Markdown.2——同步博客</span><br><span class="line">date: 2022-04-04  16:40:11</span><br><span class="line">categories: </span><br><span class="line">- 记录</span><br><span class="line"></span><br><span class="line">tags: </span><br><span class="line">- hexo</span><br></pre></td></tr></table></div></figure>        <h2 id="命令"   >          <a href="#命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#命令" class="headerlink" title="命令"></a>命令</h2>      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></div></figure><p>自己写一个脚本即可完成从md文件的同步到上传的自动化流程</p>        <h1 id="主题"   >          <a href="#主题" class="heading-link"><i class="fas fa-link"></i></a><a href="#主题" class="headerlink" title="主题"></a>主题</h1>      <p><span class="exturl"><a class="exturl__link"   href="https://www.bilibili.com/video/BV1f64y1e7LE?spm_id_from=333.880.my_history.page.click" >hexo主题安装教程</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p><span class="exturl"><a class="exturl__link"   href="http://t.zoukankan.com/simon-idea-p-14161496.html" >Hexo结合Stun静态博客搭建从入门到入土</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><iframe src="//player.bilibili.com/player.html?aid=762526895&bvid=BV1f64y1e7LE&cid=395235441&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown.1——基本操作</title>
       <link href="/2022/04/04/Markdown/Markdown-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
       <url>/2022/04/04/Markdown/Markdown-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
